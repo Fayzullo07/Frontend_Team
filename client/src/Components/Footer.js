@@ -7,16 +7,11 @@ const Footer = () => {
       <ul className='Social-links'>
         <li>
           <a href="#">Facebook</a>
-          <a href="#">Facebook</a>
-          <a href="#">Facebook</a>
         </li>
         <li>
           <a href="#">Instagram</a>
-          <a href="#">Instagram</a>
-          <a href="#">Instagram</a>
-          <a href="#">Instagram</a>
-          <a href="#">Instagram</a>
         </li>
+
       </ul>
     </div>
   )
