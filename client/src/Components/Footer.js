@@ -14,6 +14,8 @@ const Footer = () => {
           <a href="#">Instagram</a>
           <a href="#">Instagram</a>
           <a href="#">Instagram</a>
+          <a href="#">Instagram</a>
+          <a href="#">Instagram</a>
         </li>
       </ul>
     </div>
