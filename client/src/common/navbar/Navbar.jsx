@@ -1,4 +1,26 @@
-import React from "react";
+// import Css
+import './navbar.css'
+
+
+
+
+// import Images
+import logo from '../../assets/images/navbar-img/logo.png'
+import img4 from '../../assets/images/navbar-img/4.jpg'
+import img1 from '../../assets/images/navbar-img/1.jpg'
+import fashion from '../../assets/images/navbar-img/fashion.jpg'
+import flower from '../../assets/images/navbar-img/flower.jpg'
+import fur from '../../assets/images/navbar-img/furniture.jpg'
+import elec from '../../assets/images/navbar-img/electonic.jpg'
+import shoes from '../../assets/images/navbar-img/shoes.jpg'
+import vege from '../../assets/images/navbar-img/vagetables.jpg'
+import pwa from '../../assets/images/navbar-img/pwa.png'
+import img2 from '../../assets/images/navbar-img/2.jpg'
+import img7 from '../../assets/images/navbar-img/7.jpg'
+import img3 from '../../assets/images/navbar-img/3.jpg'
+import img5 from '../../assets/images/navbar-img/5.jpg'
+
+
 
 const Navbar = () => {
   return (
@@ -18,7 +40,7 @@ const Navbar = () => {
                         ></use>
                       </svg>
                       <img
-                        src="assets/images/logo.png"
+                        src={logo}
                         className="img-fluid blur-up lazyload"
                         alt="logo"
                       />
@@ -27,7 +49,7 @@ const Navbar = () => {
                   <div className="category-menu">
                     <div className="category-dropdown">
                       <div className="close-btn d-xl-none">
-                        Category List
+                        Category List   
                         <span className="back-category">
                           <i className="fa fa-angle-left"></i>
                         </span>
@@ -143,7 +165,7 @@ const Navbar = () => {
                                 <div className="col-xl-3">
                                   <div className="category-banner">
                                     <img
-                                      src="assets/images/electronics/banner/4.jpg"
+                                      src={img4}
                                       className="img-fluid blur-up lazyload"
                                       alt=""
                                     />
@@ -268,7 +290,7 @@ const Navbar = () => {
                                 <div className="col-xl-3">
                                   <div className="category-banner">
                                     <img
-                                      src="assets/images/banner/1.jpg"
+                                      src={img1}
                                       className="img-fluid blur-up lazyload"
                                       alt=""
                                     />
@@ -330,7 +352,7 @@ const Navbar = () => {
                                             className="megamenu-image"
                                           >
                                             <img
-                                              src="assets/images/demo-image/fashion.jpg"
+                                              src={fashion}
                                               className="img-fluid blur-up lazyload"
                                               alt=""
                                             />
@@ -354,7 +376,7 @@ const Navbar = () => {
                                             className="megamenu-image"
                                           >
                                             <img
-                                              src="assets/images/demo-image/flower.jpg"
+                                              src={flower}
                                               className="img-fluid blur-up lazyload"
                                               alt=""
                                             />
@@ -377,7 +399,7 @@ const Navbar = () => {
                                             className="megamenu-image"
                                           >
                                             <img
-                                              src="assets/images/demo-image/furniture.jpg"
+                                              src={fur}
                                               className="img-fluid blur-up lazyload"
                                               alt=""
                                             />
@@ -400,7 +422,7 @@ const Navbar = () => {
                                             className="megamenu-image"
                                           >
                                             <img
-                                              src="assets/images/demo-image/electonic.jpg"
+                                              src={elec}
                                               className="img-fluid blur-up lazyload"
                                               alt=""
                                             />
@@ -423,7 +445,7 @@ const Navbar = () => {
                                             className="megamenu-image"
                                           >
                                             <img
-                                              src="assets/images/demo-image/shoes.jpg"
+                                              src={shoes}
                                               className="img-fluid blur-up lazyload"
                                               alt=""
                                             />
@@ -446,7 +468,7 @@ const Navbar = () => {
                                             className="megamenu-image"
                                           >
                                             <img
-                                              src="assets/images/demo-image/vagetables.jpg"
+                                              src={vege}
                                               className="img-fluid blur-up lazyload"
                                               alt=""
                                             />
@@ -920,7 +942,7 @@ const Navbar = () => {
                         </li>
                         <li className="mobile-poster d-flex d-xl-none">
                           <img
-                            src="assets/images/pwa.png"
+                            src={pwa}
                             className="img-fluid"
                             alt=""
                           />
@@ -1015,7 +1037,7 @@ const Navbar = () => {
                             <li>
                               <div className="media">
                                 <img
-                                  src="assets/images/fashion/product/front/1.jpg"
+                                  src={img2}
                                   className="img-fluid blur-up lazyload"
                                   alt=""
                                 />
@@ -1044,7 +1066,7 @@ const Navbar = () => {
                             <li>
                               <div className="media">
                                 <img
-                                  src="assets/images/fashion/product/front/7.jpg"
+                                  src={img7}
                                   className="img-fluid blur-up lazyload"
                                   alt=""
                                 />
@@ -1107,7 +1129,7 @@ const Navbar = () => {
                       <li>
                         <div className="product-cart media">
                           <img
-                            src="assets/images/electronics/product/1.jpg"
+                            src={img3}
                             className="img-fluid blur-up lazyload"
                             alt=""
                           />
@@ -1139,7 +1161,7 @@ const Navbar = () => {
                       <li>
                         <div className="product-cart media">
                           <img
-                            src="assets/images/electronics/product/5.jpg"
+                            src={img5}
                             className="img-fluid blur-up lazyload"
                             alt=""
                           />
