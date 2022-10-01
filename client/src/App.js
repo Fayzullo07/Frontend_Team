@@ -8,13 +8,14 @@ import SignUp from "./common/signUp/signUp";
 import ForgotPassword from "./common/forgot/forgotPassword";
 import Faq from "./pages/Faq/Faq";
 import ContactUs from "./pages/ContactUs/ContactUs";
+import Compare from "./pages/Compare/Compare";
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<ContactUs />} />
+        <Route path="/" element={<Compare />} />
         <Route path="*" element={<PageNotFound/>} />
       </Routes>
       <Footer/>
