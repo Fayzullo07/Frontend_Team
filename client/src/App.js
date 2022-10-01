@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+import React from "react";
+import Search from "./Components/Search/Search";
+import UserDashboard from "./UserDashboard/UserDashboard";
+import Wishlist from "./Wishlist/Wishlist";
+
+function App() {
+  return (
+    <div className="App">
+      {/* <Search /> */}
+      {/* <Wishlist /> */}
+      {/* <UserDashboard /> */}
+    </div>
+=======
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./common/footer/Footer";
 import Navbar from "./common/navbar/Navbar";
@@ -23,6 +37,7 @@ function App() {
       {/* <SignUp /> */}
       {/* <ForgotPassword /> */}
     </BrowserRouter>
+>>>>>>> 7fecf4d7396297c9dac4a036aa7570211e63e2f1
   );
 }
 
