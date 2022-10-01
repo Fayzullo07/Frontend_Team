@@ -6,13 +6,15 @@ import PageNotFound from './pages/404/PageNotFound'
 import Login from "./common/login/login";
 import SignUp from "./common/signUp/signUp";
 import ForgotPassword from "./common/forgot/forgotPassword";
+import Faq from "./pages/Faq/Faq";
+import ContactUs from "./pages/ContactUs/ContactUs";
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<ContactUs />} />
         <Route path="*" element={<PageNotFound/>} />
       </Routes>
       <Footer/>
