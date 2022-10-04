@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./common/footer/Footer";
 import Navbar from "./common/navbar/Navbar";
@@ -23,6 +24,20 @@ function App() {
       {/* <SignUp /> */}
       {/* <ForgotPassword /> */}
     </BrowserRouter>
+=======
+import React from "react";
+import Search from "./Components/Search/Search";
+import UserDashboard from "./UserDashboard/UserDashboard";
+import Wishlist from "./Wishlist/Wishlist";
+
+function App() {
+  return (
+    <div className="App">
+      {/* <Search /> */}
+      {/* <Wishlist /> */}
+      {/* <UserDashboard /> */}
+    </div>
+>>>>>>> asaddbek
   );
 }
 

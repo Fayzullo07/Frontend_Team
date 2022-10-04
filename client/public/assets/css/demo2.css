@@ -3297,13 +3297,21 @@ span {
 /**=====================
     Lazy Load css Start
 ==========================**/
+<<<<<<< HEAD
 .blur-up {
+=======
+/* .blur-up {
+>>>>>>> asaddbek
   -webkit-filter: blur(5px);
           filter: blur(5px);
   transition: filter 400ms, -webkit-filter 400ms; }
   .blur-up.lazyloaded {
     -webkit-filter: blur(0);
+<<<<<<< HEAD
             filter: blur(0); }
+=======
+            filter: blur(0); } */
+>>>>>>> asaddbek
 
 /**=====================
      Breadcrumb css start
