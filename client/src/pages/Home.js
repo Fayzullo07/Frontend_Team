@@ -3,7 +3,7 @@ import React from 'react';
 function Home(props) {
     return (
         <div>
-            <header className="header-style-2" id="home">
+                 <header className="header-style-2" id="home">
                 <div className="main-header navbar-searchbar">
                     <div className="container-fluid-lg">
                         <div className="row">
