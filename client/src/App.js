@@ -6,15 +6,22 @@ import PageNotFound from "./pages/404/PageNotFound";
 import Login from "./common/login/login";
 import SignUp from "./common/signUp/signUp";
 import ForgotPassword from "./common/forgot/forgotPassword";
+<<<<<<< HEAD
 import OrderTracking from "./pages/orderTracking/OrderTracking";
 import OrderSuccess from "./pages/orderSuccess/OrderSuccess";
 import SingleProduct from "./pages/SingleProduct/SingleProduct";
+=======
+import Faq from "./pages/Faq/Faq";
+import ContactUs from "./pages/ContactUs/ContactUs";
+import Compare from "./pages/Compare/Compare";
+>>>>>>> 6195d65713d3368732c32b2c072d1f169e537527
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
+<<<<<<< HEAD
         <Route path="/" element={<SingleProduct />} />
         <Route path="*" element={<PageNotFound />} />
           <Route path="/login" element={<Login />} />
@@ -26,6 +33,10 @@ function App() {
           {/*<Route path="/compare" element={<Compare />} />*/}
           {/*<Route path="/cart" element={<Cart />} />*/}
           {/*<Route path="/shop_list" element={<ShopList />} />*/}
+=======
+        <Route path="/" element={<Compare />} />
+        <Route path="*" element={<PageNotFound/>} />
+>>>>>>> 6195d65713d3368732c32b2c072d1f169e537527
       </Routes>
       <Footer />
     </BrowserRouter>
