@@ -1,10 +1,14 @@
 import React from "react";
-import Banner from "./components/banner";
+import Fashion from './components/fashion/index'
+import Arial from './components/arial/index'
+import Category from './components/category/index'
 
 const Home = () => {
   return (
     <div>
-      <Banner />
+      <Fashion/>
+      <Arial/>
+      <Category/>
     </div>
   );
 };
