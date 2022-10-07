@@ -29,30 +29,8 @@ const forgotPassword = () => {
         </div>
       </div>
       {/* Sign Up Section End */}
-      {/* theme Setting Start */}
-      <div className="theme-setting">
-        <ul>
-          <li>
-            <button id="darkButton" className="btn btn-sm dark-buttton">
-              Dark
-            </button>
-          </li>
-          <li>
-            <button className="btn btn-sm rtl-button">RTL</button>
-          </li>
-          <li className="color-picker">
-            <input
-              type="color"
-              className="form-control form-control-color"
-              id="ColorPicker1"
-              defaultValue="#e22454"
-              title="Choose your color"
-            />
-          </li>
-        </ul>
-      </div>
-      {/* theme Setting End */}
-      <div className="bg-overlay" />
+    
+      
     </div>
   );
 };
