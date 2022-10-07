@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Footer from "./common/footer/Footer";
 import Navbar from "./common/navbar/Navbar";
 import Home from "./pages/home/model";
@@ -7,11 +7,14 @@ import Cart from "./pages/Cart/model";
 import Wishlist from "./pages/Wishlist/model";
 import Compare from "./pages/Compare/model";
 import Checkout from "./pages/Checkout/model";
+import UserDeshboard from "./pages/UserDashboard/model";
+
 
 function App() {
   return (
-    <BrowserRouter>
-      <Navbar />
+    
+      <div>
+        <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
@@ -19,9 +22,12 @@ function App() {
         <Route path="/compare" element={<Compare />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="*" element={<PageNotFound />} />
+        <Route path="USD" element={<UserDeshboard />} />
+
       </Routes>
       <Footer />
-    </BrowserRouter>
+      </div>
+  
   );
 }
 
