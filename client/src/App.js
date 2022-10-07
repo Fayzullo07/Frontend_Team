@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-import React from "react";
-import Search from "./Components/Search/Search";
-import UserDashboard from "./UserDashboard/UserDashboard";
-import Wishlist from "./Wishlist/Wishlist";
-
-function App() {
-  return (
-    <div className="App">
-      {/* <Search /> */}
-      {/* <Wishlist /> */}
-      {/* <UserDashboard /> */}
-    </div>
-=======
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./common/footer/Footer";
 import Navbar from "./common/navbar/Navbar";
@@ -20,24 +6,29 @@ import PageNotFound from "./pages/404/PageNotFound";
 import Login from "./common/login/login";
 import SignUp from "./common/signUp/signUp";
 import ForgotPassword from "./common/forgot/forgotPassword";
+import OrderTracking from "./pages/orderTracking/OrderTracking";
+import OrderSuccess from "./pages/orderSuccess/OrderSuccess";
+import SingleProduct from "./pages/SingleProduct/SingleProduct";
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<SingleProduct />} />
         <Route path="*" element={<PageNotFound />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<SignUp />} />
-        <Route path="/forgotPass" element={<ForgotPassword />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<SignUp />} />
+          <Route path="/forgotPass" element={<ForgotPassword />} />
+          <Route path="/single_product" element={<SingleProduct />} />
+          <Route path="/order_trackigng" element={<OrderTracking />} />
+          {/*<Route path="/wishlist" element={<Wishlist />} />*/}
+          {/*<Route path="/compare" element={<Compare />} />*/}
+          {/*<Route path="/cart" element={<Cart />} />*/}
+          {/*<Route path="/shop_list" element={<ShopList />} />*/}
       </Routes>
       <Footer />
-      {/* <Login /> */}
-      {/* <SignUp /> */}
-      {/* <ForgotPassword /> */}
     </BrowserRouter>
->>>>>>> 7fecf4d7396297c9dac4a036aa7570211e63e2f1
   );
 }
 
