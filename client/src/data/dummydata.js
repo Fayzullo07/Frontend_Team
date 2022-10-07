@@ -92,7 +92,7 @@ export const compare = [
     GenericName: "Jackets",
     Department: "Men",
     Manufacturer: "Shreenath Lifestyle Pvt. Ltd.",
-    MilitaryColor: "Military Color",
+    color: "Military Color",
     DateFirstAvailable: "25 February 2017",
   },
   {
