@@ -12,13 +12,14 @@ import SingleProduct from "./pages/SingleProduct/SingleProduct";
 import Faq from "./pages/Faq/Faq";
 import ContactUs from "./pages/ContactUs/ContactUs";
 import Compare from "./pages/Compare/Compare";
+import ProductList from "./pages/ProductList/ProductList";
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<SingleProduct />} />
+        <Route path="/" element={<ProductList />} />
         <Route path="*" element={<PageNotFound />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<SignUp />} />
