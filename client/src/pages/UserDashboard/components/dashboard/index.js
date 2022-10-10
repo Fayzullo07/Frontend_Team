@@ -1,11 +1,31 @@
-import React from "react";
-import { Link, Route, Routes } from "react-router-dom";
+import React, { useState } from "react";
 import MyDashboard from "./mydashboard";
 import MyOrder from "./myorder";
-import MyWishlist from "./mywishlist";
+import MyWishlist from './mywishlist';
+import SaveAddres from './saveaddres';
+import CardPayment from './cardpayment';
+import MyProfile from './mypofile';
+import DeleteYourAccount from './deleteyouraccount';
+
+// UserDashboard css
+import './userdashboard.css';
+
+// Function css
+import './index.css';
 
 const Dashboard = () => {
+
+
+  const [On, setOn] = useState(1);
+    
+  const Off=(index)=> {
+    setOn(index);
+  }
+  
+
+
   return (
+    
     <div>
       <section className="section-b-space">
         <div className="container">
@@ -15,7 +35,7 @@ const Dashboard = () => {
                 className="nav nav-tabs custome-nav-tabs flex-column category-option"
                 id="myTab"
               >
-                <Link to="/" className="nav-item mb-2">
+                 <div className={On === 1 ? "tabs active-tabs":"tabs"} onClick={()=>Off(1)}><li  className="nav-item mb-2">
                   <button
                     className="nav-link font-light active"
                     id="tab"
@@ -25,9 +45,10 @@ const Dashboard = () => {
                   >
                     <i className="fas fa-angle-right"></i>Dashboard
                   </button>
-                </Link>
-
-                <Link to="orders" className="nav-item mb-2">
+                </li>
+                </div>
+                
+                <div className={On ===1 ? "tabs active-tabs":"tabs"} onClick={()=>Off(2)}><li  className="nav-item mb-2">
                   <button
                     className="nav-link font-light"
                     id="1-tab"
@@ -37,9 +58,9 @@ const Dashboard = () => {
                   >
                     <i className="fas fa-angle-right"></i>Orders
                   </button>
-                </Link>
-
-                <Link to="wishlist" className="nav-item mb-2">
+                </li></div>
+                
+                <div className={On ===1 ? "tabs active-tabs":"tabs"} onClick={()=>Off(3)}> <li className="nav-item mb-2">
                   <button
                     className="nav-link font-light"
                     id="2-tab"
@@ -49,9 +70,9 @@ const Dashboard = () => {
                   >
                     <i className="fas fa-angle-right"></i>Wishlist
                   </button>
-                </Link>
-
-                <Link to="savedadress" className="nav-item mb-2">
+                </li></div>
+               
+                <div className={On ===1 ? "tabs active-tabs":"tabs"} onClick={()=>Off(4)}><li className="nav-item mb-2">
                   <button
                     className="nav-link font-light"
                     id="3-tab"
@@ -61,9 +82,9 @@ const Dashboard = () => {
                   >
                     <i className="fas fa-angle-right"></i>Saved Address
                   </button>
-                </Link>
-
-                <Link to="payment" className="nav-item mb-2">
+                </li></div>
+                
+                <div className={On ===1 ? "tabs active-tabs":"tabs"} onClick={()=>Off(5)}><li className="nav-item mb-2">
                   <button
                     className="nav-link font-light"
                     id="4-tab"
@@ -73,9 +94,9 @@ const Dashboard = () => {
                   >
                     <i className="fas fa-angle-right"></i>Payment
                   </button>
-                </Link>
-
-                <Link to="profile" className="nav-item mb-2">
+                </li></div>
+                
+                <div className={On ===1 ? "tabs active-tabs":"tabs"} onClick={()=>Off(6)}> <li className="nav-item mb-2">
                   <button
                     className="nav-link font-light"
                     id="5-tab"
@@ -85,9 +106,9 @@ const Dashboard = () => {
                   >
                     <i className="fas fa-angle-right"></i>Profile
                   </button>
-                </Link>
-
-                <Link to="security" className="nav-item">
+                </li></div>
+               
+                <div className={On ===1 ? "tabs active-tabs":"tabs"} onClick={()=>Off(7)}><li className="nav-item">
                   <button
                     className="nav-link font-light"
                     id="6-tab"
@@ -97,7 +118,8 @@ const Dashboard = () => {
                   >
                     <i className="fas fa-angle-right"></i>Security
                   </button>
-                </Link>
+                </li></div>
+                
               </ul>
             </div>
 
@@ -110,12 +132,22 @@ const Dashboard = () => {
 
               <div className="tab-content" id="myTabContent">
 
-                <Routes>
-                  <Route path="/" element={<MyDashboard />} />
-                  <Route path="orders" element={<MyOrder />} />
-                  <Route path="wishlist" element={<MyWishlist />} />
+             
+              
+              
+              
+             
+              
+              
 
-                </Routes>
+
+    <div className={On ===1 ? "disc active-disc":"disc"}  id='a1'>< MyDashboard/></div>
+    <div className={On ===2 ? "disc active-disc":"disc"} id='a2'><MyOrder/></div>
+    <div className={On ===3 ? "disc active-disc":"disc"} id='a3'><MyWishlist/>    </div>
+    <div className={On ===4 ? "disc active-disc":"disc"} id='a4'><SaveAddres/></div>
+    <div className={On ===5 ? "disc active-disc":"disc"} id='a5'> <CardPayment/></div>
+    <div className={On ===6 ? "disc active-disc":"disc"} id='a6'><MyProfile/></div>
+    <div className={On ===7 ? "disc active-disc":"disc"} id='a7'><DeleteYourAccount/></div>
 
               </div>
             </div>

@@ -1,0 +1,6 @@
+.disc{
+    display: none;
+}
+.active-disc{
+    display: block;
+}
